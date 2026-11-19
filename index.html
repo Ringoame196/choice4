@@ -7,10 +7,16 @@
 </head>
 <body>
   <div id="upload">
-    <h1>ファイルアップロード</h1>
-    <label for="quiz-csv-input">CSVファイルを選択：</label>
+  <h1>ファイルアップロード</h1>
+  <p>問題のCSVファイルを選択することで4択問題を生成します。</p>
+  <div>
+    <label for="quiz-csv-input">問題のCSVファイルを選択：</label>
     <input type="file" id="quiz-csv-input" accept=".csv,text/csv">
   </div>
+  <p>
+    <a href="https://github.com/Ringoame196/choice4/blob/main/sample_data.csv" target="_blank" rel="noopener noreferrer">サンプルデータを見る</a>
+  </p>
+</div>
 
   <div id="quiz" hidden>
     <h1 id="quiz-title"></h1>
