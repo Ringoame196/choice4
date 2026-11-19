@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4択問題</title>
+</head>
+<body>
+  <div id="upload">
+    <h1>ファイルアップロード</h1>
+    <label for="quiz-csv-input">CSVファイルを選択：</label>
+    <input type="file" id="quiz-csv-input" accept=".csv,text/csv">
+  </div>
+
+  <div id="quiz" hidden>
+    <h1 id="quiz-title"></h1>
+    <p id="quiz-text"></p>
+    <button type="button" class="choice-button" data-choice="1" id="a-1"></button>
+    <button type="button" class="choice-button" data-choice="2" id="a-2"></button>
+    <button type="button" class="choice-button" data-choice="3" id="a-3"></button>
+    <button type="button" class="choice-button" data-choice="4" id="a-4"></button>
+  </div>
+
+  <div id="result" hidden>
+    <h1>全問終了</h1>
+    <p id="score"></p>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
