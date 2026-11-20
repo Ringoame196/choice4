@@ -99,8 +99,8 @@ function checkAnswer(selectIndex) {
   }
 }
 
-retryBut.addEventListener('click',() => {
+retryBut.addEventListener('click', () => {
   uploadDiv.hidden = false;
-    quizDiv.hidden = true;
-    resultDiv.hidden = true;
+  quizDiv.hidden = true;
+  resultDiv.hidden = true;
 })
