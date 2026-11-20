@@ -4,6 +4,7 @@ const uploadDiv = document.getElementById('upload');
 const quizDiv = document.getElementById('quiz');
 const resultDiv = document.getElementById('result');
 const input = document.getElementById('quiz-csv-input');
+const retryBut = document.getElementById('retry-button');
 
 const quizTitle = document.getElementById('quiz-title');
 const quizText = document.getElementById('quiz-text');
@@ -44,6 +45,7 @@ input.addEventListener('change', (event) => {
     n = 0;
     uploadDiv.hidden = true;
     quizDiv.hidden = false;
+    resultDiv.hidden = true;
     next();
   });
 });
@@ -93,6 +95,12 @@ function checkAnswer(selectIndex) {
     const correctText = row[answerIndex + 1] ?? '';
     alert('不正解！正解は「' + correctText + '」です');
   } else {
-    correct ++;
+    correct++;
   }
 }
+
+retryBut.addEventListener('click',() => {
+  uploadDiv.hidden = false;
+    quizDiv.hidden = true;
+    resultDiv.hidden = true;
+})
